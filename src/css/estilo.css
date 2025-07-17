@@ -43,7 +43,7 @@ header section {
     gap: 12rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    padding-left: 1rem;  /* Exemplo: 2rem de espaço na esquerda */
+    padding-left: 1rem; /* Exemplo: 2rem de espaço na esquerda */
     padding-right: 1rem; /* Exemplo: 2rem de espaço na direita */
 }
 .navbar a {
@@ -74,7 +74,7 @@ header section {
     width: 40px;
     height: 40px;
 }
-.btn{
+.btn {
     background:var(--main-color) ;
     color: #fff;
     padding: 1rem 3rem;
@@ -82,6 +82,7 @@ header section {
     cursor: pointer;
     margin-top: 1rem;
     display: inline-block;
+
     
 }
 
@@ -146,4 +147,41 @@ header section {
     padding: 1rem 0;
     line-height: 1.8rem;
 
+}
+.menu .box-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.menu .box-container .box {
+    text-align: center;
+    border:var(--boder);
+    padding: 5rem;
+    cursor: pointer;
+}
+.menu .box-container .box img{
+    height: 32rem;
+    align-items: center;
+}
+
+.menu .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.menu .box-container .box .price{
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+.menu .box-container .box:hover{
+    background-color: #ffffff;
+}
+.menu .box-container .box:hover>*{
+    color: var(--black);
 }
