@@ -43,9 +43,12 @@ header section {
     gap: 12rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    padding-left: 1rem; /* Exemplo: 2rem de espaço na esquerda */
-    padding-right: 1rem; /* Exemplo: 2rem de espaço na direita */
+    padding-left: 1rem;
+    /* Exemplo: 2rem de espaço na esquerda */
+    padding-right: 1rem;
+    /* Exemplo: 2rem de espaço na direita */
 }
+
 .navbar a {
     margin: 0 1rem;
     font-size: 1.8rem;
@@ -58,24 +61,30 @@ header section {
     padding-bottom: 0.5rem;
     font-size: 2rem;
 }
+
 .logo1 {
     /* Defina o valor exato que você quer para a margem esquerda da logo */
-    margin-left: 15rem; /* Por exemplo, 3rem. Ajuste este valor conforme necessário */
+    margin-left: 15rem;
+    /* Por exemplo, 3rem. Ajuste este valor conforme necessário */
     /* Você também pode adicionar uma margem à direita se quiser espaço entre a logo e os ícones */
-    margin-right: 1.5rem; /* Exemplo de margem entre logo e ícones */
+    margin-right: 1.5rem;
+    /* Exemplo de margem entre logo e ícones */
     height: 7rem;
     width: auto;
 }
-.icons img{
+
+.icons img {
     margin: 1rem;
     cursor: pointer;
 }
-.icons img:hover{
+
+.icons img:hover {
     width: 40px;
     height: 40px;
 }
+
 .btn {
-    background:var(--main-color) ;
+    background: var(--main-color);
     color: #fff;
     padding: 1rem 3rem;
     font-size: 1.7rem;
@@ -83,105 +92,187 @@ header section {
     margin-top: 1rem;
     display: inline-block;
 
-    
+
 }
 
-.btn .hover{
+.btn .hover {
     letter-spacing: 0.2rem;
     transform: scale(1.5rem);
 }
 
-.home-container{
-    background:url("../assets/fotohome01.jpg") ;
+.home-container {
+    background: url("../assets/fotohome01.jpg");
     height: 100vh;
     background-position: center;
     background-size: cover;
 }
-.home-container section{
+
+.home-container section {
     display: flex;
     align-items: center;
     min-height: 100vh;
 }
-.content{
+
+.content {
     max-width: 60rem;
 }
-.content h3{
+
+.content h3 {
     color: #fff;
     font-size: 6rem;
 }
-.content p{
+
+.content p {
     color: #fff;
     font-size: 1.5rem;
     font-weight: 300;
     line-height: 1.8;
     padding: 1 0rem;
 }
-.titulo{
+
+.titulo {
     font-size: 5rem;
     color: var(--main-color);
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
-.titulo span{
+
+.titulo span {
     color: #fff;
     text-transform: uppercase;
 }
-.sobre .row{
+
+.sobre .row {
     display: flex;
     align-items: center;
     background-color: var(--black);
     gap: 1.8rem;
 }
-.sobre .row .content{
+
+.sobre .row .content {
     padding: 2rem;
 
 }
-.sobre .row .content h3{
+
+.sobre .row .content h3 {
     font-size: 3rem;
     color: #fff;
 }
-.sobre .row .content p{
+
+.sobre .row .content p {
     font-size: 1.5;
     color: #fff;
     padding: 1rem 0;
     line-height: 1.8rem;
 
 }
-.menu .box-container{
-    display:grid;
+
+.menu .box-container {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
 }
+
 .menu .box-container .box {
     text-align: center;
-    border:var(--boder);
+    border: var(--boder);
     padding: 5rem;
     cursor: pointer;
 }
-.menu .box-container .box img{
+
+.menu .box-container .box img {
     height: 32rem;
     align-items: center;
 }
 
-.menu .box-container .box h3{
+.menu .box-container .box h3 {
     color: #fff;
     font-size: 2rem;
     padding: 1rem 0;
 }
-.menu .box-container .box .price{
+
+.menu .box-container .box .price {
     color: #fff;
     font-size: 2.5rem;
     padding: 0.5rem 0;
 }
-.menu .box-container .box .price span{
+
+.menu .box-container .box .price span {
     font-size: 1.5rem;
     text-decoration: line-through;
     font-weight: lighter;
 }
-.menu .box-container .box:hover{
+
+.menu .box-container .box:hover {
     background-color: #ffffff;
 }
-.menu .box-container .box:hover>*{
+
+.menu .box-container .box:hover>* {
     color: var(--black);
+}
+
+.Avaliacao {
+    font-size: 3rem;
+    color: var(--main-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.Avaliacao .spam .h2 .span {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.Avaliacao .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.Avaliacao .box-container .box {
+    border: var(--boder);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.Avaliacao .box-container .box p {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 2rem 0;
+    line-height: 1.8rem;
+}
+
+.Avaliacao .box-container .box h3 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.Avaliacao .box-container .box .user {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer .redes {
+    padding: 1rem;
+
+}
+
+.footer .redes img {
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+
+}
+
+.footer .redes img:hover {
+    background-color: var(--main-color);
+
 }
