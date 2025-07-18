@@ -44,9 +44,7 @@ header section {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     padding-left: 1rem;
-    /* Exemplo: 2rem de espaço na esquerda */
     padding-right: 1rem;
-    /* Exemplo: 2rem de espaço na direita */
 }
 
 .navbar a {
@@ -124,9 +122,8 @@ header section {
 
 .content p {
     color: #fff;
-    font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 1.8;
+    font-size: 1.7rem;
+    line-height: 1.5;
     padding: 1 0rem;
 }
 
@@ -135,7 +132,7 @@ header section {
     color: var(--main-color);
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .titulo span {
@@ -151,7 +148,7 @@ header section {
 }
 
 .sobre .row .content {
-    padding: 2rem;
+    padding: 3rem;
 
 }
 
@@ -161,10 +158,10 @@ header section {
 }
 
 .sobre .row .content p {
-    font-size: 1.5;
+    font-size: 1.5rem;
     color: #fff;
     padding: 1rem 0;
-    line-height: 1.8rem;
+    line-height: 2rem;
 
 }
 
@@ -275,4 +272,19 @@ header section {
 .footer .redes img:hover {
     background-color: var(--main-color);
 
+}
+video {
+  max-width: 100%;
+  height: auto;
+  display: block; 
+  width: 100%;
+}
+#sobre {
+    scroll-margin-top: 80px; /* Ajuste este valor para a altura real do seu cabeçalho */
+}
+#menu {
+    scroll-margin-top: 80px;
+}
+#Avaliacao {
+    scroll-margin-top: 80px;
 }
