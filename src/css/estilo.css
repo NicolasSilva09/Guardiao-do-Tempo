@@ -67,7 +67,7 @@ header section {
     /* Você também pode adicionar uma margem à direita se quiser espaço entre a logo e os ícones */
     margin-right: 1.5rem;
     /* Exemplo de margem entre logo e ícones */
-    height: 7rem;
+    height: 9rem;
     width: auto;
 }
 
@@ -275,12 +275,8 @@ header section {
 
 .footer .redes img:hover {
     background-color: var(--main-color);
+}
 
-}
-/* No seu estilo.css, em qualquer lugar apropriado */
-body.no-scroll {
-    overflow: hidden;
-}
 video {
   max-width: 100%;
   height: auto;
@@ -300,40 +296,12 @@ video {
 
 @media (max-width: 768px) {
 
-    .header section {
-        display: flex;
-        justify-content: space-between;
-        align-items: center; 
-        padding: 1.5rem 2rem;
-        height: auto; 
-        gap: 1rem; 
-    }
-
     .logo1 {
         margin: 0; /* Remove margens que podem atrapalhar o flexbox */
         height: 6.5rem; /* Ajuste o tamanho da logo para o mobile */
         width: auto;
     }
-
-    .navbar a {
-        margin: 0 0.5rem;
-        line-height: normal;
-    }
-
-    .icons {
-        display: flex; /* Mantém os ícones lado a lado */
-        gap: 1.5rem; /* Espaçamento entre os ícones */
-        margin-left: auto; /* Empurra os ícones para a direita extrema */
-    }
-
-    .icons img {
-        width: 25px;
-        height: 24px;
-        margin: 0;
-    }
-
     .home-container h3{
-        width: 10%;
         font-size: 4rem;
     }
     .home-container p{
@@ -342,5 +310,4 @@ video {
     .menu .box-container {
        grid-template-columns: 100%;
     }
-    
 }

@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/carrinho3.css">
-    <title>Compra Relógio Decker Cronógrafo de Couro Marrom</title>
+    <link rel="stylesheet" href="src/css/carrinho1.css">
+    <title>Compra Decker Cronógrafo de Couro Marrom</title>
 </head>
 
 <body>
@@ -25,49 +25,76 @@
             </nav>
 
             <div class="icons">
-                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/search--v1.png" alt="search--v1" />
-                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/shopping-cart--v1.png" alt="shopping-cart--v1" />
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/search--v1.png"
+                    alt="search--v1" />
+                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/shopping-cart--v1.png"
+                    alt="shopping-cart--v1" />
             </div>
 
         </section>
     </header>
 
-    <div class="descricao">
-        <div class="box">
-            <h3>Speedtimer Cronógrafo Solar SSC813</h3>
-            <img src="src/assets/R3.png" alt="item-1">
-
-            <div class="price">R$ 1.615,00<span>R$ 2.000,00</span></div>
-            <a href="#" class="btn">Comprar</a>
-        </div>
-
     <div class="container">
-        <h1>Compra</h1>
 
-        <div class="input-box">
-            <input placeholder="Quantidade" type="text">
+        <div class="dados-section">
+
+            <div class="cadeado">
+                <img width="30" height="" src="https://img.icons8.com/ios-filled/24/000000/lock-2.png"
+                    alt="cadeado de segurança">
+                <span>Compra Segura</span>
+            </div>
+
+            <form>
+                <div class="formulario-compra">
+                    <label for="email">Email</label>
+                    <input type="email" required>
+                </div>
+
+                <div class="formulario-compra">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" required>
+                </div>
+
+                <div class="formulario-compra">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" required>
+                </div>
+
+                <div class="formulario-compra">
+                    <label for="forma-de-pagamento">Forma de Pagamento</label>
+                    <select id="forma-pagamento" required>
+                        <option value="">Selecione</option>
+                        <option value="cartaoD">Cartao de Debito</option>
+                        <option value="cartaoC">Cartao de Credito</option>
+                        <option value="boleto">Boleto Bancário</option>
+                        <option value="pix">Pix</option>
+                    </select>
+                </div>
+                <div class="formulario-compra">
+                    <label for="cpf">CPF</label>
+                    <input type="text"required>
+                </div>
+
+                <button type="submit" class="btn-compra">Finalizar Compra</button>
+
+                <div class="resumo">
+                    <h2>Resumo do Pedido</h2>
+                    <div class="resumo-pedido">
+
+                        <img src="src/assets/R3.png" alt="Fortis Stratoliner Chronograph">
+                        
+                        <div class="detalhes-nome">
+                            <h2>Decker Cronógrafo de Couro Marrom</h2>
+                        </div>
+
+                        <div class="total">
+                        <p>Total <span> R$ 1.615,00</span><p>   
+                           </div>
+                    </div>
+                </div>
+            </form>
         </div>
-
-        <div class="input-box">
-            <input placeholder="Email" type="email">
-        </div>
-
-        <div class="input-box">
-            <input placeholder="Endereço" type="text">
-        </div>
-
-        <div class="input-box">
-            <input placeholder="Telefone" type="text">
-        </div>
-
-        <div class="input-box">
-            <input placeholder="Forma de pagamento" type="text">
-        </div>
-
-        <div class="input-box">
-            <input placeholder="CPF" type="text">
-        </div>
-
-
     </div>
+
+</html>
 </body>
