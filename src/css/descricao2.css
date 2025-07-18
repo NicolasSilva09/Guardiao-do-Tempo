@@ -239,3 +239,52 @@ header section {
     align-self: flex-start; /* Garante que ela comece no topo de sua linha flex */
     margin-top: -55px; /* Ajuste este valor (ex: -10px, -30px) para subir mais ou menos */
 }
+@media (max-width: 768px) {
+
+    .header section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        padding: 1.5rem 2rem;
+        height: auto; 
+        gap: 1rem; 
+    }
+
+    .logo1 {
+        margin: 0; /* Remove margens que podem atrapalhar o flexbox */
+        height: 6.5rem; /* Ajuste o tamanho da logo para o mobile */
+        width: auto;
+    }
+
+    .navbar a {
+        margin: 0 0.5rem;
+        line-height: normal;
+    }
+
+    .icons {
+        display: flex; /* Mantém os ícones lado a lado */
+        gap: 1.5rem; /* Espaçamento entre os ícones */
+        margin-left: auto; /* Empurra os ícones para a direita extrema */
+    }
+
+    .icons img {
+        width: 25px;
+        height: 24px;
+        margin: 0;
+    }
+    .descricao{
+        margin: 0;
+        padding: 0;
+        margin-top: 25%;
+    }
+    .descricao .box img {
+    height: 18rem;
+    }
+    .descricao .box-container { 
+        width: 90%;
+        margin: 0 auto;
+    }
+    .descricao .box-container h3 {
+        font-size: 2rem;
+    }
+}

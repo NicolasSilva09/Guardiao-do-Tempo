@@ -145,14 +145,18 @@ header section {
     display: flex;
     align-items: center;
     background-color: var(--black);
-    gap: 1.8rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .sobre .row .content {
     padding: 3rem;
 
 }
-
+.container-img{
+    flex: 1 1 40rem;
+}
 .sobre .row .content h3 {
     font-size: 3rem;
     color: #fff;
@@ -168,32 +172,31 @@ header section {
 
 .menu .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(1.5rem, 9fr));
     gap: 1.5rem;
 }
 
 .menu .box-container .box {
     text-align: center;
     border: var(--boder);
-    padding: 5rem;
-    cursor: pointer;
+    padding: 1rem;
 }
 
 .menu .box-container .box img {
-    height: 32rem;
+    height: 30rem;
     align-items: center;
 }
 
 .menu .box-container .box h3 {
     color: #fff;
     font-size: 2rem;
-    padding: 1rem 0;
+    padding: 1rem 1;
 }
 
 .menu .box-container .box .price {
     color: #fff;
-    font-size: 2.5rem;
-    padding: 0.5rem 0;
+    font-size: 2.3rem;
+    padding: 1rem 0;
 }
 
 .menu .box-container .box .price span {
@@ -293,48 +296,51 @@ video {
 #Avaliacao {
     scroll-margin-top: 80px;
 }
-@media (max-width: 768px) { /* Exemplo: aplica para telas até 768px de largura */
-    header section {
-        flex-wrap: wrap; /* Permite que os itens quebrem linha */
-        justify-content: center; /* Centraliza itens se houver espaço */
-        padding: 1rem; /* Reduz um pouco o padding em telas pequenas */
+
+
+@media (max-width: 768px) {
+
+    .header section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        padding: 1.5rem 2rem;
+        height: auto; 
+        gap: 1rem; 
     }
 
-    .header section .logo img {
-        height: 5rem; /* Ajusta o tamanho do logo para telas menores */
-        width: 5rem;
-    }
-
-    .navbar {
-        /* Esconde a navbar por padrão em telas pequenas */
-        display: none; /* Ou use 'flex-direction: column;' e 'width: 100%;' para um menu vertical escondido */
-        width: 100%; /* Ocupa a largura total abaixo do logo */
-        flex-direction: column; /* Links em coluna */
-        text-align: center;
-        /* Adicione transições para uma abertura suave */
-    }
-
-    .navbar.active { /* Classe que seria adicionada/removida por JavaScript ao clicar no hambúrguer */
-        display: flex; /* Mostra a navbar */
+    .logo1 {
+        margin: 0; /* Remove margens que podem atrapalhar o flexbox */
+        height: 6.5rem; /* Ajuste o tamanho da logo para o mobile */
+        width: auto;
     }
 
     .navbar a {
-        margin: 0.5rem 0; /* Ajusta margens verticais */
-        font-size: 1.6rem; /* Reduz um pouco a fonte */
+        margin: 0 0.5rem;
+        line-height: normal;
     }
 
     .icons {
-        margin-top: 1rem; /* Espaço entre a navegação e os ícones */
-        width: 100%;
-        display: flex;
-        justify-content: center; /* Centraliza os ícones */
+        display: flex; /* Mantém os ícones lado a lado */
+        gap: 1.5rem; /* Espaçamento entre os ícones */
+        margin-left: auto; /* Empurra os ícones para a direita extrema */
     }
 
-    /* Você precisaria de um ícone de hambúrguer no HTML e CSS para ele */
-    .menu-hamburguer {
-        display: block; /* Mostra o ícone de hambúrguer */
-        font-size: 3rem; /* Tamanho do ícone */
-        color: #fff;
-        cursor: pointer;
+    .icons img {
+        width: 25px;
+        height: 24px;
+        margin: 0;
     }
+
+    .home-container h3{
+        width: 10%;
+        font-size: 4rem;
+    }
+    .home-container p{
+       margin-right: 18rem;
+    }
+    .menu .box-container {
+       grid-template-columns: 100%;
+    }
+    
 }
