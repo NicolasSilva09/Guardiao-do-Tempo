@@ -114,6 +114,7 @@ header section {
 .container .dados{
     font-size: 1.5rem;
     color: #fff;
+
 }
 .cadeado span{
     color: #ffffff;
@@ -132,12 +133,15 @@ header section {
 .btn-compra {
     background-color: #ff9900;
     color: #fff;
-    padding: 1.5rem 2.5rem;
+    padding: 1rem 5rem;
     border-radius: 4px;
     font-size: 1.8rem;
     cursor: pointer;
     width: 80%; 
-    margin-bottom: 10px;
+    margin: 1%;
+}
+.botao{
+    margin: 5%;
 }
 .container {
     display: flex; /* Para colocar 'dados' e 'box' lado a lado */
