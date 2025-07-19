@@ -239,13 +239,80 @@ header section {
     align-self: flex-start; /* Garante que ela comece no topo de sua linha flex */
     margin-top: -55px; /* Ajuste este valor (ex: -10px, -30px) para subir mais ou menos */
 }
+
+/* --- Menu Hamburguer --- */
+.hamburguer {
+    cursor: pointer;
+    position: relative;
+    /* Pode ser necessário para z-index */
+    z-index: 100;
+    /* Garante que fique acima de outros elementos */
+    display: none;
+    /* Esconde o hambúrguer por padrão em telas grandes */
+}
+
+.barra {
+    display: block;
+    width: 3rem;
+    height: .3rem;
+    background: var(--colorFont1, white);
+    /* Usando um fallback para a cor */
+    margin: .5rem auto;
+    border-radius: 1px;
+    transition: all .3s ease-in-out;
+    /* Transição para as barras */
+}
+
+.hamburguer {
+    display: none;
+}
+
 @media (max-width: 768px) {
 
-    .logo1 {
-        margin: 0; /* Remove margens que podem atrapalhar o flexbox */
-        height: 6.5rem; /* Ajuste o tamanho da logo para o mobile */
-        width: auto;
+        .logo1 {
+        margin: 0;
+        height: 6.5rem;
+        width: 55%;
     }
+
+    .navbar {
+        position: absolute;
+        top: 100%; 
+        background: var(--black);
+        width: 100%;
+        height: 0;
+        overflow: hidden; 
+        z-index: 90; 
+    }
+
+    
+    .navbar.active {
+        height: auto; 
+        max-height: 400px; 
+        padding: 1rem 0 ;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .hamburguer {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburguer.active .barra:first-child {
+        transform: translateY(8px) rotate(360deg) rotate(45deg)
+    }
+
+    .hamburguer.active .barra:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburguer.active .barra:last-child {
+        transform: translateY(-8px) rotate(-360deg) rotate(-45deg)
+    }
+
     .descricao{
         margin: 0;
         padding: 0;
@@ -255,12 +322,15 @@ header section {
     height: 18rem;
     }
     .descricao .box-container { 
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
     }
 
     .descricao .box-container h3 {
         font-size: 2rem;
     }
-
+    .descricao .box-container p{
+        padding: 4%;
+        line-height: 20px;
+    }
 }
