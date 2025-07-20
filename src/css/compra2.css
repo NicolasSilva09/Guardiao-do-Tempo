@@ -311,4 +311,45 @@ header section {
     .hamburguer.active .barra:last-child {
         transform: translateY(-8px) rotate(-360deg) rotate(-45deg)
     }
+    
+    .container {
+        display: flex;
+        margin: 0%;
+        margin-top: 17%;
+    }
+
+    .dados {
+        order: 2;
+        width: 80%;
+    }
+
+    .box {
+        order: 1;
+    }
+
+    .formulario-compra input[type="email"],
+    .formulario-compra input[type="text"],
+    .formulario-compra textarea {
+        width: 100px;
+        height: 45px;
+        padding: 0 85px;
+    }
+
+    .formulario-compra select {
+        width: 100px;
+        height: 45px;
+        padding: 1px 8px;
+    }
+
+    .botao {
+        display: flex;
+        gap: 1%;
+        flex-direction: column;
+        margin-top: 10%;
+        margin-left: 5%;
+        width: 70%;
+    }
+    .btn-compra{
+        margin-bottom: 10%;
+    }
 }

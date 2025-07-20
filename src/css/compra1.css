@@ -98,6 +98,7 @@ header section {
     letter-spacing: 0.2rem;
     transform: scale(1.5rem);
 }
+
 .container {
     display: flex;
     flex-direction: row;
@@ -107,28 +108,33 @@ header section {
     flex-wrap: wrap;
     margin-top: 15rem;
     justify-content: center;
-    border-radius: 8px; /* Cantos arredondados */
+    border-radius: 8px;
+    /* Cantos arredondados */
     background-color: #000000;
 
 }
-.container .dados{
+
+.container .dados {
     font-size: 1.5rem;
     color: #fff;
 }
-.cadeado span{
+
+.cadeado span {
     color: #ffffff;
 }
+
 .formulario-compra {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     margin: 10px;
 }
 
 .formulario-compra label {
     display: block;
-    margin-bottom: 8px; 
+    margin-bottom: 8px;
     color: #ffffff;
     font-size: 1.6rem;
 }
+
 .btn-compra {
     background-color: #ff9900;
     color: #fff;
@@ -136,64 +142,82 @@ header section {
     border-radius: 4px;
     font-size: 1.8rem;
     cursor: pointer;
-    width: 80%; 
+    width: 80%;
     margin: 1%;
 }
-.botao{
+
+.botao {
     margin: 5%;
 }
+
 .container {
-    display: flex; /* Para colocar 'dados' e 'box' lado a lado */
-    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
-    padding: 30px; /* Padding no container principal */
-    justify-content: center; /* Centraliza os itens se houver espaço extra */
+    display: flex;
+    /* Para colocar 'dados' e 'box' lado a lado */
+    flex-wrap: wrap;
+    /* Permite quebrar linha em telas menores */
+    padding: 30px;
+    /* Padding no container principal */
+    justify-content: center;
+    /* Centraliza os itens se houver espaço extra */
 }
 
 .dados {
-    flex: 1 1 450px; /* Cresce, encolhe, base de 450px */
-    background-color: var(--black); 
+    flex: 1 1 450px;
+    /* Cresce, encolhe, base de 450px */
+    background-color: var(--black);
     padding: 20px;
 
 }
 
-.box { /* Este é o painel de "Resumo do Pedido" */
-    flex: 1 1 200px; 
+.box {
+    /* Este é o painel de "Resumo do Pedido" */
+    flex: 1 1 200px;
     color: #fff;
-    background-color: var(--black); 
+    background-color: var(--black);
     font-size: 2rem;
 }
 
 
-.box h2 { /* Título "Resumo do Pedido" */
+.box h2 {
+    /* Título "Resumo do Pedido" */
     font-size: 1.8rem;
-    color: #fff ;
+    color: #fff;
     margin-bottom: 20px;
-    text-align: center; /* Centraliza o título */
+    text-align: center;
+    /* Centraliza o título */
 }
 
-.detalhes-produto{
+.detalhes-produto {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     font-size: 1.5rem;
     font-weight: bold;
     color: #ffffff;
-    padding-top: 20px; /* Espaço acima do total */
+    padding-top: 20px;
+    /* Espaço acima do total */
 }
 
 .item-resumo {
-    display: flex; /* Para alinhar imagem e detalhes lado a lado */
-    align-items: center; /* Alinha verticalmente os itens no centro */
-    margin-bottom: 20px; /* Espaço abaixo do item do produto */
-    padding-bottom: 20px; /* Espaço antes da linha divisória */
-    border-bottom: 1px solid #eee; /* Linha divisória */
+    display: flex;
+    /* Para alinhar imagem e detalhes lado a lado */
+    align-items: center;
+    /* Alinha verticalmente os itens no centro */
+    margin-bottom: 20px;
+    /* Espaço abaixo do item do produto */
+    padding-bottom: 20px;
+    /* Espaço antes da linha divisória */
+    border-bottom: 1px solid #eee;
+    /* Linha divisória */
     color: #fff;
 }
 
 .item-resumo img {
-    width: 100px; /* Ajuste o tamanho da imagem do produto */
+    width: 100px;
+    /* Ajuste o tamanho da imagem do produto */
     height: auto;
-    margin-right: 15px; /* Espaço à direita da imagem */
+    margin-right: 15px;
+    /* Espaço à direita da imagem */
     border-radius: 4px;
 }
 
@@ -202,12 +226,13 @@ header section {
 
 .total-resumo {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     font-size: 2rem;
     font-weight: bold;
     color: #ffffff;
-    padding-top: 20px; /* Espaço acima do total */
+    padding-top: 20px;
+    /* Espaço acima do total */
 }
 
 .container .box {
@@ -215,11 +240,13 @@ header section {
     border: var(--boder);
     padding: 1rem;
 }
+
 .container .box img {
     height: 15rem;
-    margin:10%;
+    margin: 10%;
     width: 50%;
 }
+
 .container .box:hover {
     background-color: #fff;
 }
@@ -229,7 +256,7 @@ header section {
 }
 
 
-.cancelar a{
+.cancelar a {
     background-color: #ff9900;
     color: #fff;
     padding: 1.5rem 2.5rem;
@@ -239,6 +266,7 @@ header section {
     width: 80%;
     margin-bottom: 10px;
 }
+
 /* --- Menu Hamburguer --- */
 .hamburguer {
     cursor: pointer;
@@ -265,9 +293,10 @@ header section {
 .hamburguer {
     display: none;
 }
+
 @media (max-width: 768px) {
 
-        .logo1 {
+    .logo1 {
         margin: 0;
         height: 6.5rem;
         width: 55%;
@@ -275,19 +304,19 @@ header section {
 
     .navbar {
         position: absolute;
-        top: 100%; 
+        top: 100%;
         background: var(--black);
         width: 100%;
         height: 0;
-        overflow: hidden; 
-        z-index: 90; 
+        overflow: hidden;
+        z-index: 90;
     }
 
-    
+
     .navbar.active {
-        height: auto; 
-        max-height: 400px; 
-        padding: 1rem 0 ;
+        height: auto;
+        max-height: 400px;
+        padding: 1rem 0;
     }
 
     .icons {
@@ -309,5 +338,46 @@ header section {
 
     .hamburguer.active .barra:last-child {
         transform: translateY(-8px) rotate(-360deg) rotate(-45deg)
+    }
+
+    .container {
+        display: flex;
+        margin: 0%;
+        margin-top: 17%;
+    }
+
+    .dados {
+        order: 2;
+        width: 80%;
+    }
+
+    .box {
+        order: 1;
+    }
+
+    .formulario-compra input[type="email"],
+    .formulario-compra input[type="text"],
+    .formulario-compra textarea {
+        width: 100px;
+        height: 45px;
+        padding: 0 85px;
+    }
+
+    .formulario-compra select {
+        width: 100px;
+        height: 45px;
+        padding: 1px 8px;
+    }
+
+    .botao {
+        display: flex;
+        gap: 1%;
+        flex-direction: column;
+        margin-top: 10%;
+        margin-left: 5%;
+        width: 70%;
+    }
+    .btn-compra{
+        margin-bottom: 10%;
     }
 }
